@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mtdemo-pg:
+    image: postgres:14
+    container_name: mtdemo-pg
+    environment:
+      POSTGRES_DB: mtdemo-db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5440:5432"
+    volumes:
+      - mtdemo_data:/var/lib/postgresql/data
+
+volumes:
+  mtdemo_data:

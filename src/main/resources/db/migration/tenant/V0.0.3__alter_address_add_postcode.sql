@@ -1,0 +1,2 @@
+
+ALTER TABLE address ADD COLUMN postcode VARCHAR(10);

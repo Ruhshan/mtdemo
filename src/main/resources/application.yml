@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: mtdemo
+  datasource:
+    url: jdbc:postgresql://localhost:5440/mtdemo-db?currentSchema=public
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    locations: classpath:db/migration/public
